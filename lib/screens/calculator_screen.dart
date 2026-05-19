@@ -152,9 +152,16 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Calculator') ,
+      appBar: AppBar(
+        title: const Text('Calculator'),
+        titleTextStyle: const TextStyle(
+          fontSize: 30,
+          fontWeight: FontWeight.bold,
+          color: Color.fromARGB(255, 255, 255, 255),
+        ),
+        backgroundColor: const Color.fromARGB(255, 91, 141, 182),
       ),
-    
+
       body: SafeArea(
         child: Column(
           children: [
