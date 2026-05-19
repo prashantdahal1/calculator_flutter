@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/calculator_screen.dart';
 
 class Calculator extends StatelessWidget {
   const Calculator({super.key});
@@ -7,7 +8,8 @@ class Calculator extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Calculator',
+      title: 'Calculator App',
+      home: const CalculatorScreen(),
     );
   }
 }
