@@ -152,7 +152,9 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Calculator')),
+      appBar: AppBar(title: const Text('Calculator') ,
+      ),
+    
       body: SafeArea(
         child: Column(
           children: [
@@ -160,7 +162,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
               flex: 2,
               child: Container(
                 alignment: Alignment.bottomRight,
-                padding: const EdgeInsets.all(10),
+                padding: const EdgeInsets.all(20),
                 child: Text(
                   _display,
                   style: const TextStyle(
@@ -180,7 +182,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
 
   Widget _buildButtonGrid() {
     return Container(
-      padding: const EdgeInsets.all(4),
+      padding: const EdgeInsets.all(12),
       child: GridView.builder(
         itemCount: _buttons.length,
         physics: const NeverScrollableScrollPhysics(),
